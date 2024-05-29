@@ -1,0 +1,16 @@
+path 2:
+same as 1 - but saved every 1000 instead of every 5000
+
+2 c10 lr 0.0001 shellow DQN
+3 c100 lr 0.001
+4 c100 lr 0.0001 deep
+5 deeper 102-128-64-1 Relu c100 lr 0.0001
+6 like 5 decay 5000 LR 0.0001
+7 c 250 100-128-1 LR= 1E-5
+8 state zeros c100 lr 1E-4
+
+100 DQN 27-64-1 board 5*5 lr 1E-4 
+101 LR 1E-2
+102 LR 1E-2 board 5 * 7 
+
+104 - blue aginst alphabeta
